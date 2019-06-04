@@ -18,7 +18,7 @@
 |--|--|----|---|--|
 |SignName|String|是|阿里云|签名名称。
 
- **说明：** 签名必须符合[个人用户签名规范](~~108076~~)或[企业用户签名规范](~~108254~)。
+ **说明：** 签名必须符合[个人用户签名规范](~~108076~~)或[企业用户签名规范](~~108254~~)。
 
  |
 |SignSource|Integer|是|1|签名来源。其中：
@@ -44,12 +44,12 @@
  |
 |SignFileList.N.FileSuffix|String|否|jpg|签名的证明文件格式，支持上传多张图片。当前支持jpg、png、gif或jpeg格式的图片。
 
- 个别场景下，申请签名需要上传证明文件。详细说明请参考[个人用户签名规范](~~108076~~)和[企业用户签名规范](~~108254~)。
+ 个别场景下，申请签名需要上传证明文件。详细说明请参考[个人用户签名规范](~~108076~~)和[企业用户签名规范](~~108254~~)。
 
  |
 |SignFileList.N.FileContents|String|否|R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAA|签名的质证明文件经base64编码后的字符串。图片不超过2 MB。
 
- 个别场景下，申请签名需要上传证明文件。详细说明请参考[个人用户签名规范](~~108076~~)和[企业用户签名规范](~~108254~)。
+ 个别场景下，申请签名需要上传证明文件。详细说明请参考[个人用户签名规范](~~108076~~)和[企业用户签名规范](~~108254~~)。
 
  |
 
@@ -79,7 +79,7 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=AddSmsSign
+http(s)://dysmsapi.aliyuncs.com/?Action=AddSmsSign
 &SignName=阿里云
 &SignSource=1
 &Remark=当前的短信签名应用于双11大促推广营销
@@ -95,7 +95,7 @@ http(s)://[Endpoint]/?Action=AddSmsSign
 <AddSmsSignResponse>
   <SignName>阿里云</SignName>
   <Message>OK</Message>
-  <RequestId>44DF7A95-603F-4651-9298-BE1850BEB53F</RequestId>
+  <RequestId>F655A8D5-B967-440B-8683-DAD6FF8DE990</RequestId>
   <Code>OK</Code>
 </AddSmsSignResponse>
 
@@ -107,7 +107,7 @@ http(s)://[Endpoint]/?Action=AddSmsSign
 {
 	"SignName":"阿里云",
 	"Message":"OK",
-	"RequestId":"2184201F-BFB3-446B-B1F2-C746B7BF0657",
+	"RequestId":"F655A8D5-B967-440B-8683-DAD6FF8DE990",
 	"Code":"OK"
 }
 ```
