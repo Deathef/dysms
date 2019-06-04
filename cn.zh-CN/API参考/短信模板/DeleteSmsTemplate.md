@@ -15,19 +15,9 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|TemplateCode|String|是|SMS\_152550005|短信模板CODE。您可以在控制台
+|TemplateCode|String|是|SMS\_152550005|短信模板CODE。您可以在控制台**模板管理**页面或API接口**AddSmsTemplate**的返回参数中获取短信模板CODE。
 
-**模板管理**
-
-页面
-
-**或API接口**
-
-AddSmsTemplate
-
-**的返回参数中获取短信模板CODE。**
-
-|
+ |
 |AccessKeyId|String|否|LTAIP00vvvvvvvvv|主账号AccessKey的ID。
 
  |
@@ -61,7 +51,7 @@ AddSmsTemplate
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=DeleteSmsTemplate
+http(s)://dysmsapi.aliyuncs.com/?Action=DeleteSmsTemplate
 &TemplateCode=SMS_152550005
 &<公共请求参数>
 
