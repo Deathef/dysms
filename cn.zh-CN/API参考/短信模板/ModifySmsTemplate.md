@@ -73,7 +73,7 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=ModifySmsTemplate
+http(s)://dysmsapi.aliyuncs.com/?Action=ModifySmsTemplate
 &TemplateType=1
 &TemplateName=阿里云短信测试模板
 &TemplateContent=您正在申请手机注册，验证码为：${code}，5分钟内有效！
@@ -91,7 +91,7 @@ http(s)://[Endpoint]/?Action=ModifySmsTemplate
 <ModifySmsTemplateResponse>
   <TemplateCode>SMS_152550005</TemplateCode>
   <Message>OK</Message>
-  <RequestId>44DF7A95-603F-4651-9298-BE1850BEB53F</RequestId>
+  <RequestId>F655A8D5-B967-440B-8683-DAD6FF8DE990</RequestId>
   <Code>OK</Code>
 </ModifySmsTemplateResponse>
 
@@ -102,7 +102,7 @@ http(s)://[Endpoint]/?Action=ModifySmsTemplate
 ``` {#json_return_success_demo}
 {
 	"Message":"OK",
-	"RequestId":"2184201F-BFB3-446B-B1F2-C746B7BF0657",
+	"RequestId":"F655A8D5-B967-440B-8683-DAD6FF8DE990",
 	"TemplateCode":"SMS_152550005",
 	"Code":"OK"
 }
