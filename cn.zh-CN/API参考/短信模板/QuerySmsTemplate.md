@@ -78,7 +78,7 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=QuerySmsTemplate
+http(s)://dysmsapi.aliyuncs.com/?Action=QuerySmsTemplate
 &TemplateCode=SMS_152550005
 &<公共请求参数>
 
