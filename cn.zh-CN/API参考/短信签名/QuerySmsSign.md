@@ -64,7 +64,7 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=QuerySmsSign
+http(s)://dysmsapi.aliyuncs.com//?Action=QuerySmsSign
 &SignName=阿里云
 &<公共请求参数>
 
