@@ -53,7 +53,7 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?Action=DeleteSmsSign
+http(s)://dysmsapi.aliyuncs.com/?Action=DeleteSmsSign
 &SignName=阿里云
 &<公共请求参数>
 
