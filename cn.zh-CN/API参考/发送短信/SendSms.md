@@ -1,4 +1,4 @@
-# SendSms {#doc_api_916081 .reference}
+# SendSms {#doc_api_Dysmsapi_SendSms .reference}
 
 调用SendSms发送短信。
 
@@ -11,9 +11,9 @@
 -   发送短信会根据发送量计费，价格请参考[计费说明](https://www.aliyun.com/price/product#/sms/detail)。
 -   在一次请求中，最多可以向1000个手机号码发送同样内容的短信。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-单击[这里](https://api.aliyun.com/#product=Dysmsapi&api=SendSms)在OpenAPI Explorer中进行可视化调试，并生成SDK代码示例。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dysmsapi&api=SendSms&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -26,7 +26,7 @@
  -   国内短信：11位手机号码，例如15951955195。
 -   国际/港澳台消息：国际区号+号码，例如85200000000。
 
-支持对多个手机号码发送短信，手机号码之间以英文逗号（,）分隔。上限为1000个手机号码。批量调用相对于单条调用及时性稍有延迟。
+ 支持对多个手机号码发送短信，手机号码之间以英文逗号（,）分隔。上限为1000个手机号码。批量调用相对于单条调用及时性稍有延迟。
 
  **说明：** 验证码类型短信，建议使用单独发送的方式。
 
@@ -59,7 +59,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -98,12 +98,11 @@ http(s)://[Endpoint]/?PhoneNumbers=15900000000
 
 ``` {#xml_return_success_demo}
 <SendSmsResponse>
-  <Message>OK</Message>
-  <RequestId>44DF7A95-603F-4651-9298-BE1850BEB53F</RequestId>
-  <BizId>336006646937050335^0</BizId>
-  <Code>OK</Code>
+      <Message>OK</Message>
+      <RequestId>44DF7A95-603F-4651-9298-BE1850BEB53F</RequestId>
+      <BizId>336006646937050335^0</BizId>
+      <Code>OK</Code>
 </SendSmsResponse>
-
 ```
 
 `JSON` 格式
@@ -119,5 +118,5 @@ http(s)://[Endpoint]/?PhoneNumbers=15900000000
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dysmsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dysmsapi)查看更多错误码。
 
