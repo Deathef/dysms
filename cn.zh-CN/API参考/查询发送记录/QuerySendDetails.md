@@ -1,4 +1,4 @@
-# QuerySendDetails {#doc_api_915983 .reference}
+# QuerySendDetails {#doc_api_Dysmsapi_QuerySendDetails .reference}
 
 调用QuerySendDetails接口查看短信发送记录和发送状态。
 
@@ -6,9 +6,9 @@
 
 如果指定日期短信发送量较大，可以分页查看。指定每页显示的短信详情数量和查看的页数，即可分页查看发送记录。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-单击[这里](https://api.aliyun.com/#product=Dysmsapi&api=QuerySendDetails)在OpenAPI Explorer中进行可视化调试，并生成SDK代码示例。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dysmsapi&api=QuerySendDetails&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -45,7 +45,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -64,35 +64,35 @@
 |SmsSendDetailDTOs| | |短信发送明细。
 
  |
-|└Content|String|【阿里云】验证码为：123，您正在登录，若非本人操作，请勿泄露|短信内容。
+|Content|String|【阿里云】验证码为：123，您正在登录，若非本人操作，请勿泄露|短信内容。
 
  |
-|└ErrCode|String|DELIVRD|运营商短信状态码。
+|ErrCode|String|DELIVRD|运营商短信状态码。
 
  -   短信发送成功：DELIVRD。
 -   短信发送失败：失败错误码请参考[错误码文档](~~101347~~)。
 
  |
-|└OutId|String|123|外部流水扩展字段。
+|OutId|String|123|外部流水扩展字段。
 
  |
-|└PhoneNum|String|15200000000|接收短信的手机号码。
+|PhoneNum|String|15200000000|接收短信的手机号码。
 
  |
-|└ReceiveDate|String|2019-01-08 16:44:13|短信接收日期和时间。
+|ReceiveDate|String|2019-01-08 16:44:13|短信接收日期和时间。
 
  |
-|└SendDate|String|2019-01-08 16:44:10|短信发送日期和时间。
+|SendDate|String|2019-01-08 16:44:10|短信发送日期和时间。
 
  |
-|└SendStatus|Long|3|短信发送状态，包括：
+|SendStatus|Long|3|短信发送状态，包括：
 
  -   1：等待回执。
 -   2：发送失败。
 -   3：发送成功。
 
  |
-|└TemplateCode|String|SMS\_122310183|短信模板ID。
+|TemplateCode|String|SMS\_122310183|短信模板ID。
 
  |
 |TotalCount|String|1|短信发送总条数。
@@ -119,24 +119,23 @@ http(s)://[Endpoint]/?CurrentPage=1
 
 ``` {#xml_return_success_demo}
 <QuerySendDetailsResponse>
-  <TotalCount>1</TotalCount>
-  <Message>OK</Message>
-  <RequestId>908D868C-D35E-438B-9632-9D7F3E440F6D</RequestId>
-  <SmsSendDetailDTOs>
-    <SmsSendDetailDTO>
-      <OutId>123</OutId>
-      <SendDate>2019-01-08 16:44:10</SendDate>
-      <SendStatus>3</SendStatus>
-      <ReceiveDate>2019-01-08 16:44:13</ReceiveDate>
-      <ErrCode>DELIVRD</ErrCode>
-      <TemplateCode>SMS_122310183</TemplateCode>
-      <Content>【阿里云】验证码为：123，您正在登录，若非本人操作，请勿泄露</Content>
-      <PhoneNum>15200000000</PhoneNum>
-    </SmsSendDetailDTO>
-  </SmsSendDetailDTOs>
-  <Code>OK</Code>
+      <TotalCount>1</TotalCount>
+      <Message>OK</Message>
+      <RequestId>908D868C-D35E-438B-9632-9D7F3E440F6D</RequestId>
+      <SmsSendDetailDTOs>
+            <SmsSendDetailDTO>
+                  <OutId>123</OutId>
+                  <SendDate>2019-01-08 16:44:10</SendDate>
+                  <SendStatus>3</SendStatus>
+                  <ReceiveDate>2019-01-08 16:44:13</ReceiveDate>
+                  <ErrCode>DELIVRD</ErrCode>
+                  <TemplateCode>SMS_122310183</TemplateCode>
+                  <Content>【阿里云】验证码为：123，您正在登录，若非本人操作，请勿泄露</Content>
+                  <PhoneNum>15200000000</PhoneNum>
+            </SmsSendDetailDTO>
+      </SmsSendDetailDTOs>
+      <Code>OK</Code>
 </QuerySendDetailsResponse>
-
 ```
 
 `JSON` 格式
@@ -166,5 +165,5 @@ http(s)://[Endpoint]/?CurrentPage=1
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dysmsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dysmsapi)查看更多错误码。
 
